@@ -1,11 +1,11 @@
-import Image from "next/image";
+
 import "./src/input.css";
-import Header from "./components/Header";
 import Hero from "./components/Hero";
 import { Partners } from "./components";
 import { Contact } from "./components";
 import StructureSection from "./components/StructureSection";
 import JoinSection from "./components/JoinSection";
+
 export default function Home() {
   return (
     <>
@@ -17,7 +17,7 @@ export default function Home() {
           <StructureSection />
           <JoinSection />
         </div>
-      </div>
+      </div> 
     </>
   );
 }
