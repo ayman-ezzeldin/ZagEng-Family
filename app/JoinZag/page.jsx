@@ -1,11 +1,56 @@
-import CommitteeSelection from "../components/CommitteeSelection";
+"use client";
+// import { useRouter } from "next/router";
+import { useState } from "react";
+
 const JoinZagEngPage = () => {
+  // const router = useRouter()
+  // const [formValidate , setFormValidate] = useState(false)
+  // function handleSubmit() {
+  //   // router.push('/')
+  //   setTimeout(() => {
+  //     window.location.href = "/";
+  //   }, 1000);
+  // }
+
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: ''
+});
+const [formValidity, setFormValidity] = useState(false);
+// const router = useRouter();
+
+const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+        ...formData,
+        [name]: value
+    });
+};
+
+
+const handleButtonSubmit = () => {
+    window.location.href = '/'
+    
+};
+
+const validateForm = () => {
+    const { name, email, phone } = formData;
+    return name.trim() !== '' && email.trim() !== '' && phone.trim() !== '';
+};
+
+const handleFormValidation = () => {
+    const isValid = validateForm();
+    setFormValidity(isValid);
+};
+
   return (
     <div>
       <div className=" container mx-auto font-mon xl:max-w-[1200px] my-9 text-white bg-black ">
         <h1 className=" text-5xl font-bold   pl-4 pt-14 ">Join ZagEng</h1>
         <form
-          className=" "
+        // onChange={handleSubmit}
           method="post"
           action="https://script.google.com/macros/s/AKfycbxV_JLrXU6wfQod27OzT4mVtgVj62MpeUbl9l-xdf-LHMmXUYbmyiZj-uLQcg4NiFj2/exec"
         >
@@ -21,9 +66,12 @@ const JoinZagEngPage = () => {
                 <input
                   type="text"
                   placeholder="Your Name"
-                  name="Your Name"
+                  name="name"
                   className="py-3 bg-black border border-gray-700 shadow appearance-none  rounded w-full  px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline "
-                  required
+                  value={formData.name} 
+                  onChange={handleChange} 
+                  onBlur={handleFormValidation} // Validate on blur
+                  require
                 />
               </div>
               <div className="mb-4">
@@ -33,9 +81,12 @@ const JoinZagEngPage = () => {
                 <input
                   type="email"
                   placeholder="Your Email"
-                  name="Your Email"
+                  name="email"
                   className="py-3 bg-black border border-gray-700 shadow appearance-none  rounded w-full px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline "
-                  required
+                  value={formData.email} 
+                  onChange={handleChange} 
+                  onBlur={handleFormValidation} // Validate on blur
+                  require
                 />
               </div>
               <div className="mb-4">
@@ -45,8 +96,11 @@ const JoinZagEngPage = () => {
                 <input
                   type="tel"
                   placeholder="Your Number"
-                  name="Your Number"
+                  name="phone"
                   className=" py-3 bg-black border border-gray-700 shadow  rounded w-full px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline appearance-none  "
+                  value={formData.phone} 
+                  onChange={handleChange} 
+                  onBlur={handleFormValidation} // Validate on blur
                   required
                 />
               </div>
@@ -59,6 +113,7 @@ const JoinZagEngPage = () => {
                   className="py-3 bg-black border border-gray-700 shadow  rounded w-full  px-3 text-gray-300 leading-tight focus:outline-none focus:shadow-outline  "
                   required
                 >
+                  <option value="--">--</option>
                   <option value="Preparatory engineering">
                     Preparatory engineering
                   </option>
@@ -109,6 +164,7 @@ const JoinZagEngPage = () => {
                   className=" py-3 bg-black  border border-gray-700 shadow  rounded w-full  px-3 text-gray-300 leading-tight focus:outline-none focus:shadow-outline  "
                   required
                 >
+                  <option value="--">--</option>
                   <option value="Academic">Academic</option>
                   <option value="CS">CS</option>
                   <option value="IT">IT</option>
@@ -167,7 +223,9 @@ const JoinZagEngPage = () => {
             <input
               type="submit"
               value="Submit"
-              className=" sm:w-[390px] px-8 mt-4 mb-8 cursor-pointer leading-10 tracking-wide h-[73px] text-2xl p-2 rounded-md gap-2 bg-[#be4c03] font-mon font-[700] "
+              disabled={!formValidity}
+              onClick={handleButtonSubmit}
+              className={` sm:w-[390px] px-8 mt-4 mb-8 cursor-pointer leading-10 tracking-wide h-[73px] text-2xl p-2 rounded-md gap-2 ${!formValidity ? 'bg-[#e48e58] ' : 'bg-[#BE4C03]'} font-mon font-[700] `}
             />
           </div>
         </form>
