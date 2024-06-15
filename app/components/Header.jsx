@@ -22,7 +22,7 @@ const Header = () => {
         </Link>
         {/* desktop navbar */}
         <nav className="gap-5 hidden lg:flex text-black">
-          <Link href="/about" className="hover:opacity-50 duration-300"> {/* /zageng/index.html */}
+          <Link href="/About" className="hover:opacity-50 duration-300"> {/* /zageng/index.html */}
             About
           </Link>
           <Link href="/comittees" className="hover:opacity-50 duration-300">
@@ -78,7 +78,7 @@ const Header = () => {
         }`}
       >
         <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
+        <Link href="/About">About</Link>
         <Link href="/comittees">Comittees</Link>
         <Link href="/JoinZag">Join Us</Link>
       </nav>
