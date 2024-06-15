@@ -127,7 +127,7 @@ const Footer = () => {
       <div className=" m-auto text-center py-8 ">
         <p className=" text-xl">
           {" "}
-          <span className=" font-semibold tracking-wider ">ZagEng    dfnhdfgnh </span> © - {date}  All Rights Reserved
+          <span className=" font-semibold tracking-wider ">ZagEng </span> © - {date}  All Rights Reserved
         </p>
       </div>
     </footer>
