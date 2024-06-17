@@ -6,6 +6,51 @@ import insta from "../../public/assets/images/mdi_instagram.png";
 import linkedin from "../../public/assets/images/mdi_linkedin.png";
 import vector1 from "../../public/assets/images/Vector (1).png";
 import vector from "../../public/assets/images/Vector.png";
+
+const Social = [
+  {
+    title : 'X' ,
+    img : vector1 ,
+    href : "https://twitter.com/engzagfamily" ,
+  },
+  {
+    title : 'Linkedin' ,
+    img : linkedin ,
+    href : 'https://www.linkedin.com/company/zagengfamily',
+  },
+  {
+    title : 'Facebook' ,
+    img : vector ,
+    href : 'https://www.facebook.com/zagengfamily',
+  },
+  {
+    title : 'Instagram' ,
+    img : insta ,
+    href : 'https://www.instagram.com/zagengfamily',
+  },
+]
+
+const Comittes = [
+  {
+    title : 'Human Resources' ,
+  },
+  {
+    title : 'Acadamic' ,
+  },
+  {
+    title : 'Information technology' ,
+  },
+  {
+    title : 'Technical' ,
+  },
+  {
+    title : 'Media' ,
+  },
+  {
+    title : 'Computer science' ,
+  },
+]
+
 const Footer = () => {
   const date = new Date().getFullYear();
   console.log(date);
@@ -45,82 +90,31 @@ const Footer = () => {
         </div>
         <div className=" hidden md:block md:col-span-3 ">
           <h4 className="text-xl font-semibold mb-2">COMMITTEES</h4>
-          <ul className="">
-            <li className="">
+          <ul>
+            {Comittes.map((item) => (
+            <li >
               <a href="" className=" hover:underline block mt-1 ">
-                Human Resources
+                {item.title}
               </a>
             </li>
-            <li className="">
-              <a href="" className=" hover:underline block mt-1 ">
-                Acadamic
-              </a>
-            </li>
-            <li className="">
-              <a href="" className=" hover:underline block mt-1 ">
-                Information technology
-              </a>
-            </li>
-            <li className="">
-              <a href="" className=" hover:underline block mt-1 ">
-                Technical
-              </a>
-            </li>
-            <li className="">
-              <a href="" className=" hover:underline block mt-1 ">
-                Media
-              </a>
-            </li>
-            <li className="">
-              <a href="" className=" hover:underline block mt-1 ">
-                Computer science
-              </a>
-            </li>
+            ) )}
           </ul>
         </div>
         <div className=" col-span-5 md:col-span-2">
           <h4 className="text-xl font-semibold mb-2">Follow us</h4>
-          <ul className="">
-            <li className="">
+          <ul>
+            {Social.map((item) => (
+              <li className="">
               <Link
-                href="https://twitter.com/engzagfamily"
+                href={item.href}
                 target="_blank"
                 className="flex items-center justify-start gap-4"
               >
-                <Image src={vector1} className=" w-6" />
-                <h1 className=" text-2xl">x</h1>
+                <Image src={item.img} className=" w-6" />
+                <h1 className=" text-2xl hover:underline ">{item.title}</h1>
               </Link>
             </li>
-            <li className="">
-              <Link
-                href="https://www.linkedin.com/company/zagengfamily"
-                target="_blank"
-                className="flex items-center justify-start gap-4"
-              >
-                <Image src={linkedin} className=" w-6" />
-                <h1 className=" text-xl">Linkedin</h1>
-              </Link>
-            </li>
-            <li className="">
-              <Link
-                href="https://www.facebook.com/zagengfamily"
-                target="_blank"
-                className="flex items-center justify-start gap-4"
-              >
-                <Image src={vector} className=" w-6" />
-                <h1 className=" text-xl">Facebook</h1>
-              </Link>
-            </li>
-            <li className="">
-              <Link
-                href="https://www.instagram.com/zagengfamily"
-                target="_blank"
-                className="flex items-center justify-start gap-4"
-              >
-                <Image src={insta} className=" w-6" />
-                <h1 className=" text-xl">Instagram</h1>
-              </Link>
-            </li>
+            ) )}
           </ul>
         </div>
       </div>
