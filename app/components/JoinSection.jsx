@@ -1,7 +1,6 @@
 import Link from "next/link";
-import group from "../../public/assets/iamges/Group 3.png";
+import group from "../../public/assets/iamges/joinsection.png";
 import vector1 from "../../public/assets/iamges/Vector 1.png";
-import vector from "../../public/assets/images/Vector.svg"
 import Image from "next/image";
 
 function JoinSection() {
