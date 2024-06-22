@@ -1,5 +1,5 @@
 
-import "./src/input.css";
+// import "./src/input.css";
 import Hero from "./components/Hero";
 import { Partners } from "./components";
 import { Contact } from "./components";

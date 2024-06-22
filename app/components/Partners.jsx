@@ -1,4 +1,4 @@
-
+"use client"
 import techneImage from "../../public/assets/techne.png";
 import nourImage from "../../public/assets/nour.png";
 import Image from 'next/image'

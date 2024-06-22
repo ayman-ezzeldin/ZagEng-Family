@@ -1,4 +1,4 @@
-
+"use client"
 import heroPg from '../../public/assets/hero-bg1.jpg'
 import Image from 'next/image'
 import Link from 'next/link';

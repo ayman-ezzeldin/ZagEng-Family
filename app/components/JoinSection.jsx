@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import group from "../../public/assets/iamges/joinsection.png";
 import vector1 from "../../public/assets/iamges/Vector 1.png";

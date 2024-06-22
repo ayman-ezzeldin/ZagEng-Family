@@ -1,3 +1,4 @@
+"use client"
 import unsplash2 from "../../public/assets/iamges/unsplash_9BoqXzEeQqM (2).png";
 import unsplash3 from "../../public/assets/iamges/unsplash_9BoqXzEeQqM (3).png";
 import i38 from "../../public/assets/iamges/380657223_881796083025264_2558736653751751045_n.jpg";

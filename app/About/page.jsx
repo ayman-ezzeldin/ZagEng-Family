@@ -1,6 +1,4 @@
-// import '/src/omr/input.css'
-// import '/src/omr/output.css'
-// import '/src/omr/in.css'
+"use client"
 import Image from 'next/image';
 
 import question from "../../public/assets/images/question_mark.png"
