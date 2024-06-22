@@ -29,7 +29,7 @@ const FirstYear = () => {
   return (
     <div className=" text-black mt-[100px] flex flex-wrap gap-6 justify-center items-center p-9 md:p-0 ">
       {FirstYearLevels.map((level) => (
-        <div class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div key={level.title} class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
             <Image
               class="rounded-t-lg"

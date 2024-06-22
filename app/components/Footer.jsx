@@ -9,21 +9,25 @@ import vector from "../../public/assets/images/Vector.png";
 
 const Social = [
   {
+    id : '1' ,
     title : 'X' ,
     img : vector1 ,
     href : "https://twitter.com/engzagfamily" ,
   },
   {
+    id : '2' ,
     title : 'Linkedin' ,
     img : linkedin ,
     href : 'https://www.linkedin.com/company/zagengfamily',
   },
   {
+    id : '3' ,
     title : 'Facebook' ,
     img : vector ,
     href : 'https://www.facebook.com/zagengfamily',
   },
   {
+    id : '4' ,
     title : 'Instagram' ,
     img : insta ,
     href : 'https://www.instagram.com/zagengfamily',
@@ -91,7 +95,7 @@ const Footer = () => {
           <h4 className="text-xl font-semibold mb-2">COMMITTEES</h4>
           <ul>
             {Comittes.map((item) => (
-            <li >
+            <li key={item.title} >
               <a href="" className=" hover:underline block mt-1 ">
                 {item.title}
               </a>
@@ -103,13 +107,13 @@ const Footer = () => {
           <h4 className="text-xl font-semibold mb-2">Follow us</h4>
           <ul>
             {Social.map((item) => (
-              <li className="">
+              <li key={item.id} className="">
               <Link
                 href={item.href}
                 target="_blank"
                 className="flex items-center justify-start gap-4"
               >
-                <Image src={item.img} className=" w-6" />
+                <Image src={item.img} className=" w-6" alt='image here' />
                 <h1 className=" text-2xl hover:underline ">{item.title}</h1>
               </Link>
             </li>

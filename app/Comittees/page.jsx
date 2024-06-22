@@ -4,26 +4,31 @@ import comitteImg from "./../../public/assets/comittes/image-1.jpg";
 
 const Comitteeslevels = [
   {
+    id : '1' ,
     img: comitteImg,
     title: "Preparatory",
     href : 'https://github.com/ayman-ezzeldin'
   },
   {
+    id : '2' ,
     img: comitteImg,
     title: "First year",
     href : 'FirstYear'
   },
   {
+    id : '3' ,
     img: comitteImg,
     title: "Second year",
     href : 'SecondYear'
   },
   {
+    id : '4' ,
     img: comitteImg,
     title: "Third year",
     href : 'ThirdYear'
   },
   {
+    id : '5' ,
     img: comitteImg,
     title: "Fourth year",
     href : 'FourthYear'
@@ -34,7 +39,7 @@ const Comittees = () => {
   return (
     <div className=" text-white mt-[100px] flex flex-wrap gap-6 justify-center items-center p-9 md:p-0 ">
       {Comitteeslevels.map((level) => (
-        <div class=" max-w-sm bg-white text-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div key={level.id} class=" max-w-sm bg-white text-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
             <Image
               class="rounded-t-lg"

@@ -29,9 +29,9 @@ function JoinSection() {
         <div className="flex flex-col justify-between items-center mt-16 relative font-montserrat">
           <h1 className="text-[64px] font-montserrat font-bold mb-10 ">Join the family</h1>
           <p className="my-10 text-lg text-center sm:px-1 md:px-1 lg:px-56 text-gray-400 text leading-8  ">
-            Each season begins simultaneously with universities, immediately
+            Each season begins simultaneously with universities &lsquo; immediately
             after the end of the summer vacation. We target talents with
-            different skills and capabilities. Hurry yp and don't miss this
+            different skills and capabilities. Hurry yp and don &apos; t miss this
             exceptional opportunity!
           </p>
           <Link href='/JoinZag' className="flex justify-start items-center gap-2 text-xl my-5 ll">
@@ -50,7 +50,7 @@ function JoinSection() {
           </Link>
 
           <div className="absolute text-md text-center text-white bg-yellow-900 p-2 rotate-[-25deg] rounded-3xl right-[220px] top-[70px] hidden xl:block 2xl:hidden">
-            Don't miss the apportunity
+            Don &apos; t miss the apportunity
           </div>
           <div className="absolute w-32 h-32 right-[280px] top-[-0px] hidden xl:block 2xl:hidden">
             <Image className=" w-[140px]" src={vector1} alt="logo" />
