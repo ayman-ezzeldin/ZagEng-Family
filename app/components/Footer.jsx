@@ -53,7 +53,6 @@ const Comittes = [
 
 const Footer = () => {
   const date = new Date().getFullYear();
-  console.log(date);
   return (
     <footer className="bg-gradient-to-t from-amber-950  to-black mt-20 ">
       <div className=" flex align-items-center gap-6 w-[90%] m-auto items-center">
@@ -64,10 +63,10 @@ const Footer = () => {
       </div>
       <div className="grid grid-cols-12 md:grid-cols-12 gap-4 mt-10 w-[90%] m-auto justify-content-center">
         <div className=" col-span-12 md:col-span-5">
-          <h3 className=" text-4xl ml-8 mb-5 font-semibold">
+          <h3 className=" text-[40px] ml-8 mb-5 font-bold">
             Care about present <br /> Build the future
           </h3>
-          <p className=" text-2xl ml-8 ">
+          <p className=" ml-8 text-[22px] text-gray ">
             This is our slogan, our aim is to{" "}
             <br className=" hidden md:block" /> recruit and build talents
           </p>

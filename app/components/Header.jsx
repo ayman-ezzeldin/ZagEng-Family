@@ -1,40 +1,71 @@
 "use client";
-import { useState } from "react"
-import Link from 'next/link'
-import Image from 'next/image'
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 import logo from "../../public/assets/logo.png";
 
-const Header = () => {
-  
+const NavLinks = [
+  {
+    id: 1,
+    name: "Home",
+    path: "/",
+  },
+  {
+    id: 2,
+    name: "Comittees",
+    path: "/Comittees",
+  },
+  {
+    id: 3,
+    name: "About Us",
+    path: "/About",
+  },
+];
 
+const Header = () => {
   const [drawerVisible, setDrawerVisible] = useState(false);
+
+  const pathname = usePathname();
+  const isActive = (path) => path === pathname;
+
   return (
-    <header className="flex py-3 items-center justify-between bg-blend-hard-lightbg bg-[#ffe5d4] px-5 lg:px-20 text-lg font-medium absolute top-0 z-50 w-full">
-      <div className="flex items-center gap-5">
+    <header className="flex py-3 font-montserrat items-center justify-between bg-blend-hard-lightbg bg-[#ffe5d4] px-5 lg:px-20 text-lg font-medium absolute top-0 z-50 w-full">
+      <div className="flex items-center gap-5 ">
         <Link href="/" className="flex items-center gap-2">
           <div>
             <Image src={logo} alt="logo" className="w-12" />
           </div>
-          <h1 className="font-bold bg-gradient-to-br from-[#BE4C03] to-[#E76F00] bg-clip-text text-transparent capitalize">
+          <h1 className="font-extrabold text-[24px] bg-gradient-to-br from-[#BE4C03] to-[#E76F00] bg-clip-text text-transparent capitalize">
             zag eng family
           </h1>
         </Link>
-        {/* desktop navbar */}
-        <nav className="gap-5 hidden lg:flex text-black">
-          <Link href="/About" className="hover:opacity-50 duration-300"> {/* /zageng/index.html */}
-            About
-          </Link>
-          <Link href="/Comittees" className="hover:opacity-50 duration-300">
-            Comittees
-          </Link>
+      </div>
+      <div>
+        <nav className="gap-5 hidden lg:flex w-[392px] mr-12 text-black">
+          {NavLinks.map((link) => {
+            return (
+              <Link
+                key={link.id}
+                href={link.path}
+                className={
+                  isActive(link.path)
+                    ? " hover:opacity-50 duration-300  text-[24px] font-medium "
+                    : "hover:opacity-50 duration-300 text-gray  text-[24px] font-medium "
+                }
+              >
+                {link.name}
+              </Link>
+            );
+          })}
         </nav>
       </div>
       <Link
         href="/JoinZag"
-        className="hidden lg:block hover:brightness-110 duration-300"
+        className="hidden lg:block hover:brightness-110 duration-300 text-[24px] font-montserrar leading-7 font-medium tracking-wider "
       >
-        <div  className="bg-gradient-to-br from-[#BE4C03] to-[#E76F00] rounded-3xl px-6 py-2 text-white">
+        <div className="bg-gradient-to-br from-[#BE4C03] to-[#E76F00] rounded-3xl px-6 py-2 text-white">
           Join us
         </div>
       </Link>

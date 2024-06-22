@@ -51,6 +51,7 @@ const handleFormValidation = () => {
         <h1 className=" text-5xl font-bold   pl-4 pt-14 ">Join ZagEng</h1>
         <form
         // onChange={handleSubmit}
+          
           method="post"
           action="https://script.google.com/macros/s/AKfycbxV_JLrXU6wfQod27OzT4mVtgVj62MpeUbl9l-xdf-LHMmXUYbmyiZj-uLQcg4NiFj2/exec"
         >

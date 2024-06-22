@@ -27,7 +27,7 @@ const FourthYearLevels = [
 ];
 const FourthYear = () => {
   return (
-    <div className=" text-white mt-[100px] flex flex-wrap gap-6 justify-center items-center p-9 md:p-0 ">
+    <div className=" text-black mt-[100px] flex flex-wrap gap-6 justify-center items-center p-9 md:p-0 ">
       {FourthYearLevels.map((level) => (
         <div class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
@@ -39,7 +39,7 @@ const FourthYear = () => {
           </a>
           <div class="p-5">
             <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                 {level.title}
               </h5>
             </a>

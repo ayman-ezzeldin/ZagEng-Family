@@ -1,6 +1,7 @@
 
 import heroPg from '../../public/assets/hero-bg1.jpg'
 import Image from 'next/image'
+import Link from 'next/link';
 const Hero = () => {
   return (
     <section className="relative lg:h-screen overflow-hidden flex items-center justify-center p-10 pt-20">
@@ -25,6 +26,10 @@ const Hero = () => {
           Our goals is to help each other so we can make more connections and
           form a family, also we can improve both hard and soft skills.
         </p>
+        <Link href="/Comittees">
+          <button className="bg-[#BE4C03] font-montserrat text-[24px] font-medium border border-[#FFAC78] mt-10  py-1 px-28 rounded-lg text-white ">
+            Comittees </button>
+        </Link>
       </div>
     </section>
   );
