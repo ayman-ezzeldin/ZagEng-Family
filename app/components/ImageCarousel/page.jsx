@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
 import img1 from '../../../public/assets/iamges/380657223_881796083025264_2558736653751751045_n.jpg'
 import img2 from '../../../public/assets/iamges/pixelarticons_arrow-right.png'
-import img3 from '../../../public/assets/iamges/Group 3.png'
+// import img3 from '../../../public/assets/iamges/Group 3.png'
 // import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const ImageCarousel = () => {
