@@ -4,32 +4,42 @@ import group from "../../public/assets/iamges/joinsection.png";
 import vector1 from "../../public/assets/iamges/Vector 1.png";
 import Image from "next/image";
 
+const historyOfJoin = [
+  {
+    id : '1' ,
+    number : '24k+' ,
+    title : 'followers in facebook' ,
+  }, 
+  {
+    id : '2',
+    number : '2007' ,
+    title : 'we are here since' ,
+  }, 
+  {
+    id : '3' ,
+    number : '24k+' ,
+    title : 'members in the family' ,
+  }, 
+
+]
 function JoinSection() {
   return (
     <>
       <div className="space w-full mt-10 ">
         <Image src={group} className="w-full" alt="background-image" />
       </div>
-
       <section className="flex flex-col items-center justify-between font-montserrat">
         <div className="nums w-full  grid grid-cols-3 mb-28">
-          <div className="num text-center border-r-2">
-            <h1 className="text-[64px] font-bold mb-2">24k+</h1>
-            <p className=" text-[24px] font-semibold">followers in facebook</p>
+          { historyOfJoin.map((history) => (
+            <div key={history.id} className="num text-center border-r-2">
+            <h1 className=" text-4xl md:text-[64px] font-bold mb-2"> {history.number} </h1>
+            <p className=" md:text-[24px] font-semibold">{history.title}</p>
           </div>
-          <div className="num text-center border-r-2 ">
-            <h1 className="text-[64px] font-bold mb-2">2007</h1>
-            {/* adding p-1 */}
-            <p className=" text-[24px] font-semibold"> we are here since</p>
-          </div>
-          <div className="num text-center">
-            <h1 className="text-[64px] font-bold mb-2">99+</h1>
-            <p className=" text-[24px] font-semibold">members in the family</p>
-          </div>
+          ) ) }
         </div>
-        <div className="flex flex-col justify-between items-center mt-16 relative font-montserrat">
+        <div className="flex flex-col justify-between items-center mt-16 relative text-center font-montserrat">
           <h1 className="text-[64px] font-montserrat font-bold mb-10 ">Join the family</h1>
-          <p className="my-10 text-lg text-center sm:px-1 md:px-1 lg:px-56 text-gray-400 text leading-8  ">
+          <p className="my-10 text-lg text-center p-2 md:px-1 lg:px-56 text-gray-400 text leading-8  ">
             Each season begins simultaneously with universities &lsquo; immediately
             after the end of the summer vacation. We target talents with
             different skills and capabilities. Hurry yp and don &apos; t miss this
