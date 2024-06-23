@@ -76,7 +76,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className=" col-span-6 ml-7 md:col-span-2">
+        <div className=" col-span-6 ml-7 md:col-span-2  ">
           <h1 className=" text-xl font-semibold mb-2">Family</h1>
           <ul className="">
             <li className="">
