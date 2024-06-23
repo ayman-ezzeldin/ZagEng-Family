@@ -38,7 +38,7 @@ function JoinSection() {
           ) ) }
         </div>
         <div className="flex flex-col justify-between items-center mt-16 relative text-center font-montserrat">
-          <h1 className="text-[64px] font-montserrat font-bold mb-10 ">Join the family</h1>
+          <h1 className=" text-[40px] md:text-[64px] font-montserrat font-bold mb-10 ">Join the family</h1>
           <p className="my-10 text-lg text-center p-2 md:px-1 lg:px-56 text-gray-400 text leading-8  ">
             Each season begins simultaneously with universities &lsquo; immediately
             after the end of the summer vacation. We target talents with
