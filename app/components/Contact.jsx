@@ -8,7 +8,7 @@ import Image from 'next/image'
 const Contact = () => {
   return (
     <>
-      <section className="text-center px-10 lg:px-20 lg:py-10 py-5">
+      <section className="text-center px-10 lg:px-20 lg:py-10 py-5 bg-black text-white ">
         <h2 className="text-4xl lg:text-6xl font-bold tracking-wider">
           Stay near
         </h2>

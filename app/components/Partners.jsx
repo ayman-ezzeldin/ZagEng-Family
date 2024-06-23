@@ -4,7 +4,7 @@ import nourImage from "../../public/assets/nour.png";
 import Image from 'next/image'
 const Partners = () => {
   return (
-    <section className="py-14 px-10 lg:px-20">
+    <section className="py-14 px-10 lg:px-20 bg-black text-white ">
       <h2 className="font-bold text-center tracking-widest text-xl">
         PARTNERS
       </h2>

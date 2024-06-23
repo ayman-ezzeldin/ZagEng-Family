@@ -25,7 +25,7 @@ const historyOfJoin = [
 function JoinSection() {
   return (
     <>
-      <div className="space w-full mt-10 ">
+      <div className="space w-full mt-10 bg-black text-white ">
         <Image src={group} className="w-full" alt="background-image" />
       </div>
       <section className="flex flex-col items-center justify-between font-montserrat">
