@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily : {
-        'montserrat' : ['Montserrat', 'sans-serif']
+          montserrat : ['var(--font-montserrat)'] ,
       } ,
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

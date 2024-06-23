@@ -53,7 +53,7 @@ function JoinSection() {
           <div className="absolute text-md text-center text-white bg-yellow-900 p-2 rotate-[-25deg] rounded-3xl right-[220px] top-[70px] hidden xl:block 2xl:hidden">
             Don &apos; t miss the apportunity
           </div>
-          <div className="absolute w-32 h-32 right-[280px] top-[-0px] hidden xl:block 2xl:hidden">
+          <div className="absolute w-32 h-32 right-[260px] top-[-0px] hidden xl:block 2xl:hidden">
             <Image className=" w-[140px]" src={vector1} alt="logo" />
           </div>
         </div>
