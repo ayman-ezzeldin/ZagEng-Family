@@ -47,8 +47,8 @@ const handleFormValidation = () => {
 
   return (
     <div className=" bg-black" >
-      <div className=" container mx-auto font-mon xl:max-w-[1200px] my-9 text-white bg-black ">
-        <h1 className=" text-5xl font-bold   pl-4 pt-14 ">Join ZagEng</h1>
+      <div className=" container mx-auto font-mon xl:max-w-[1200px] mt-9 text-white bg-black ">
+        <h1 className=" text-5xl font-bold  pl-4 pt-14 ">Join ZagEng</h1>
         <form
         // onChange={handleSubmit}
           
@@ -223,7 +223,7 @@ const handleFormValidation = () => {
               value="Submit"
               disabled={!formValidity}
               onClick={handleButtonSubmit}
-              className={` sm:w-[390px] px-8 mt-4 mb-8 cursor-pointer leading-10 tracking-wide h-[73px] text-2xl p-2 rounded-md gap-2 ${!formValidity ? 'bg-[#e48e58] ' : 'bg-[#BE4C03]'} font-mon font-[700] `}
+              className={` sm:w-[390px] px-8 mt-4 cursor-pointer leading-10 tracking-wide h-[73px] text-2xl p-2 rounded-md gap-2 ${!formValidity ? 'bg-[#e48e58] ' : 'bg-[#BE4C03]'} font-mon font-[700] `}
             />
           </div>
         </form>

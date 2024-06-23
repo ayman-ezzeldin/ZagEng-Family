@@ -38,7 +38,7 @@ const Comitteeslevels = [
 
 const Comittees = () => {
   return (
-    <div className=" text-white mt-[100px] flex flex-wrap gap-6 justify-center items-center p-9 md:p-0 bg-black ">
+    <div className=" text-white mt-[100px]  flex flex-wrap gap-6 justify-center items-center p-9 md:p-0 bg-black ">
       {Comitteeslevels.map((level) => (
         <div key={level.id} class=" max-w-sm bg-white text-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">

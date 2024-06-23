@@ -58,7 +58,7 @@ const Comittes = [
 const Footer = () => {
   const date = new Date().getFullYear();
   return (
-    <footer className="bg-gradient-to-t from-amber-950  to-black  text-white ">
+    <footer className="bg-gradient-to-t from-amber-950 pt-20 to-black  text-white ">
       <div className=" flex align-items-center gap-6 w-[90%] m-auto items-center">
         <Image src={image} alt="image" />
         <h2 className=" bg-gradient-to-l from-orange-600 to-orange-800 text-transparent bg-clip-text font-bold text-2xl ">

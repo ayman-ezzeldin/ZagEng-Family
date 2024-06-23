@@ -45,7 +45,7 @@ function JoinSection() {
             different skills and capabilities. Hurry yp and don &apos; t miss this
             exceptional opportunity!
           </p>
-          <Link href='/JoinZag' className="flex justify-start items-center gap-2 text-xl my-5 ll mb-20 ">
+          <Link href='/JoinZag' className="flex justify-start items-center gap-2 text-xl my-5 ll  ">
             <span
               className=" font-normal text-[35px] font-montserrat text-[#59C9A5] "
             >
