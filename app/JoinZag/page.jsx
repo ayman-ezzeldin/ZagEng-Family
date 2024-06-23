@@ -46,7 +46,7 @@ const handleFormValidation = () => {
 };
 
   return (
-    <div>
+    <div className=" bg-black" >
       <div className=" container mx-auto font-mon xl:max-w-[1200px] my-9 text-white bg-black ">
         <h1 className=" text-5xl font-bold   pl-4 pt-14 ">Join ZagEng</h1>
         <form
@@ -148,9 +148,6 @@ const handleFormValidation = () => {
               </div>
             </div>
           </div>
-
-          {/* <CommitteeSelection/> */}
-
           <div className="grid grid-cols-3 md:grid-cols-8 gap-4 mt-9">
             <h2 className="text-2xl text-center md:ml-0 md:text-right col-span-3 md:col-span-2 ">
               Choose your committee

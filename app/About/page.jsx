@@ -6,7 +6,7 @@ import brain from "../../public/assets/images/pink brain.png"
 import trophy from "../../public/assets/images/trophy and target.png"
 const About = () => {
 return (
-<div className=" mt-[140px] bg-black text-white ">
+<div className=" mt-[140px] bg-black text-white mb-20 ">
     {/* <!-- main container --> */}
     <div className="">
         {/* <!-- who are we --> */}
