@@ -14,8 +14,8 @@ const NavLinks = [
   },
   {
     id: 2,
-    name: "Comittees",
-    path: "/Comittees",
+    name: "Material",
+    path: "/Material",
   },
   {
     id: 3,

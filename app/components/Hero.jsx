@@ -26,9 +26,9 @@ const Hero = () => {
           Our goals is to help each other so we can make more connections and
           form a family, also we can improve both hard and soft skills.
         </p>
-        <Link href="/Comittees">
+        <Link href="/Material">
           <button className="bg-[#BE4C03] font-montserrat text-[24px] font-medium border border-[#FFAC78] mt-10  py-1 px-5 md:px-28 rounded-lg text-white ">
-            Comittees </button>
+            Go to Material </button>
         </Link>
       </div>
     </section>
