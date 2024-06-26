@@ -2,9 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import comitteImg from "./../../public/assets/comittes/image-1.jpg";
+import comitteImg from "@/public/assets/comittes/image-1.jpg";
 
-const FourthYearLevels = [
+const FirstYearLevels = [
   {
     img: comitteImg,
     title: "Computer System",
@@ -26,10 +26,10 @@ const FourthYearLevels = [
     title: "Industrial",
   },
 ];
-const FourthYear = () => {
+const FirstYear = () => {
   return (
     <div className=" text-black bg-black mt-[100px] flex flex-wrap gap-6 justify-center items-center p-9 md:p-0 ">
-      {FourthYearLevels.map((level) => (
+      {FirstYearLevels.map((level) => (
         <div key={level.title} class=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
             <Image
@@ -78,4 +78,4 @@ const FourthYear = () => {
   )
 }
 
-export default FourthYear
+export default FirstYear

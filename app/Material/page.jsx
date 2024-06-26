@@ -14,25 +14,25 @@ const Comitteeslevels = [
     id : '2' ,
     img: comitteImg,
     title: "First year",
-    href : 'FirstYear'
+    href : 'Material/FirstYear'
   },
   {
     id : '3' ,
     img: comitteImg,
     title: "Second year",
-    href : 'SecondYear'
+    href : 'Material/SecondYear'
   },
   {
     id : '4' ,
     img: comitteImg,
     title: "Third year",
-    href : 'ThirdYear'
+    href : 'Material/ThirdYear'
   },
   {
     id : '5' ,
     img: comitteImg,
     title: "Fourth year",
-    href : 'FourthYear'
+    href : 'Material/FourthYear'
   },
 ];
 

@@ -2,9 +2,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 
 import logo from "../../public/assets/logo.png";
+import NavLink from "./NavLink";
 
 const NavLinks = [
   {
@@ -27,9 +27,6 @@ const NavLinks = [
 const Header = () => {
   const [drawerVisible, setDrawerVisible] = useState(false);
 
-  const pathname = usePathname();
-  const isActive = (path) => path === pathname;
-
   return (
     <header className="flex py-3 font-montserrat items-center justify-between bg-blend-hard-lightbg bg-[#ffe5d4] px-5 lg:px-20 text-lg font-medium absolute top-0 z-50 w-full">
       <div className="flex items-center gap-5 ">
@@ -46,17 +43,7 @@ const Header = () => {
         <nav className="gap-5 hidden lg:flex w-[392px] mr-12 text-black">
           {NavLinks.map((link) => {
             return (
-              <Link
-                key={link.id}
-                href={link.path}
-                className={
-                  isActive(link.path)
-                    ? " hover:opacity-50 duration-300  text-[24px] font-medium "
-                    : "hover:opacity-50 duration-300 text-gray  text-[24px] font-medium "
-                }
-              >
-                {link.name}
-              </Link>
+              <NavLink key={link.id} href={link.path} > {link.name} </NavLink>
             );
           })}
         </nav>
@@ -110,7 +97,7 @@ const Header = () => {
       >
         <Link href="/">Home</Link>
         <Link href="/About">About</Link>
-        <Link href="/Comittees">Comittees</Link>
+        <Link href="/Material">Material</Link>
         <Link href="/JoinZag">Join Us</Link>
       </nav>
     </header>

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import comitteImg from "./../../public/assets/comittes/image-1.jpg";
+import comitteImg from "@/public/assets/comittes/image-1.jpg";
 
 const SecondYearLevels = [
   {
