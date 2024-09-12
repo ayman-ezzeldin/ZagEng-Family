@@ -34,7 +34,7 @@ To run this project locally:
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/zag-eng-family.git
+https://github.com/ayman-ezzeldin/ZagEng-Family.git
 ```
 
 2.Install the dependencies:
