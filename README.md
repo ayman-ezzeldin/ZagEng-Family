@@ -23,7 +23,7 @@ Zag Eng Family is a web-based platform that allows users to search and manage da
 - HTML
 - CSS
 - JavaScript
-- React
+- Next js
 - Vercel (for deployment)
 - Excel sheet page
 
