@@ -86,7 +86,7 @@ Contributions are welcome! If you'd like to contribute to this project:
 1. Fork the repository.
 2. Create a new branch:
 
-   ```
+ ```
    git checkout -b feature/new-feature
 ```
 3. Make your changes and commit them:
