@@ -1,38 +1,100 @@
-Deploying with Vercel : https://zagtest.vercel.app/
+# Zag Eng Family
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Zag Eng Family is a web-based platform that allows users to search and manage data from various providers. Designed to provide students with a convenient and efficient solution, it offers an easy-to-use interface, a login system, and personalized data management for registered users.
 
-## Getting Started
+## Table of Contents
 
-First, run the development server:
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Screenshots](#screenshots)
+- [Usage](#usage)
+- [Contributing](#contributing)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+
+- **Search and Manage Data**: Users can search for and manage data from multiple providers.
+- **User Login System**: Secure login for students with personalized dashboards.
+- **Data Management**: Registered users can save, organize, and access their data efficiently.
+- **Responsive Design**: The platform is fully responsive and works on all devices.
+
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
+- React
+- Vercel (for deployment)
+- Excel sheet page
+
+## Installation
+
+To run this project locally:
+
+1. Clone the repository:
+
+```
+git clone https://github.com/your-username/zag-eng-family.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2.Install the dependencies:
+``` 
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3.Start the development server:
+```
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Screenshots
 
-## Learn More
+Here are some screenshots of the Zag Eng Family platform:
 
-To learn more about Next.js, take a look at the following resources:
+### Home Page
+![Home Page Screenshot](./public/assets/readme/1.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Partners
+![Partners Screenshot](./public/assets/readme/2.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Team Structure
+![Team Structure Screenshot](./public/assets/readme/3.png)
 
-## Deploy on Vercel
+### Form
+![Form Screenshot](./public/assets/readme/4.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Materials
+![Materials Screenshot](./public/assets/readme/5.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Usage
+
+To start using the Zag Eng Family platform:
+
+1. **LogIn**: Create a new account or log in using an existing one.
+2. **Search for Data**: Use the search functionality to find relevant data from various providers.
+3. **Manage Data**: Once logged in, users can save, edit, and organize their data through the personalized dashboard.
+4. **Explore Pages**: Navigate through the platform’s various pages for additional information, support, and resources.
+
+The platform is designed to work seamlessly on mobile, tablet, and desktop devices.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project:
+
+1. Fork the repository.
+2. Create a new branch:
+
+   ```
+   git checkout -b feature/new-feature
+```
+3. Make your changes and commit them:
+```
+git commit -m 'Add a new feature'
+```
+4. Push your branch:
+```
+git push origin feature/new-feature
+```
+5. Open a pull request on GitHub.
